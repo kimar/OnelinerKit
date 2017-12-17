@@ -8,7 +8,7 @@
 
 import ScreenSaver
 
-public class OnelinerView: ScreenSaverView {
+open class OnelinerView: ScreenSaverView {
     private let fetchQueue = DispatchQueue(label: .fetchQueue)
     private let mainQueue = DispatchQueue.main
     
@@ -28,19 +28,19 @@ public class OnelinerView: ScreenSaverView {
         initialize()
     }
     
-    override public var configureSheet: NSWindow? {
+    override open var configureSheet: NSWindow? {
         return nil
     }
     
-    override public var hasConfigureSheet: Bool {
+    override open var hasConfigureSheet: Bool {
         return false
     }
     
-    override public func animateOneFrame() {
+    override open func animateOneFrame() {
         fetchNext()
     }
     
-    override public func draw(_ rect: NSRect) {
+    override open func draw(_ rect: NSRect) {
         super.draw(rect)
         
         var newFrame = label.frame
