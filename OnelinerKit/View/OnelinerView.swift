@@ -16,7 +16,7 @@ open class OnelinerView: ScreenSaverView {
     private var fetchingDue = true
     private var lastFetchDate: Date?
     
-    override init?(frame: NSRect, isPreview: Bool) {
+    override public init?(frame: NSRect, isPreview: Bool) {
         super.init(frame: frame, isPreview: isPreview)
         label = .label(isPreview, bounds: frame)
         initialize()
@@ -55,7 +55,7 @@ open class OnelinerView: ScreenSaverView {
     }
     
     open func fetchOneline(_ completion: (String) -> Void) {
-        
+        preconditionFailure("`fetchOneline` must be overridden")
     }
     
     private func initialize() {
