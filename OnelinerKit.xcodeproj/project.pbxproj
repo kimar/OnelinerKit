@@ -10,6 +10,12 @@
 		07A101511FE67FAC00F7A42F /* OnelinerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A101471FE67FAC00F7A42F /* OnelinerKit.framework */; };
 		07A101561FE67FAC00F7A42F /* OnelinerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A101551FE67FAC00F7A42F /* OnelinerKitTests.swift */; };
 		07A101581FE67FAC00F7A42F /* OnelinerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A1014A1FE67FAC00F7A42F /* OnelinerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07A101631FE6802100F7A42F /* NSTextField+Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A101621FE6802100F7A42F /* NSTextField+Label.swift */; };
+		07A101651FE6808C00F7A42F /* Date+FetchInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A101641FE6808C00F7A42F /* Date+FetchInterval.swift */; };
+		07A101671FE680A600F7A42F /* TimeInterval+FetchInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A101661FE680A600F7A42F /* TimeInterval+FetchInterval.swift */; };
+		07A1016A1FE680F400F7A42F /* OnelinerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A101691FE680F400F7A42F /* OnelinerView.swift */; };
+		07A1016C1FE6818600F7A42F /* UserDefaults+LastLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A1016B1FE6818600F7A42F /* UserDefaults+LastLine.swift */; };
+		07A1016E1FE681A000F7A42F /* String+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A1016D1FE681A000F7A42F /* String+Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		07A101501FE67FAC00F7A42F /* OnelinerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnelinerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A101551FE67FAC00F7A42F /* OnelinerKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnelinerKitTests.swift; sourceTree = "<group>"; };
 		07A101571FE67FAC00F7A42F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A101621FE6802100F7A42F /* NSTextField+Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextField+Label.swift"; sourceTree = "<group>"; };
+		07A101641FE6808C00F7A42F /* Date+FetchInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+FetchInterval.swift"; sourceTree = "<group>"; };
+		07A101661FE680A600F7A42F /* TimeInterval+FetchInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+FetchInterval.swift"; sourceTree = "<group>"; };
+		07A101691FE680F400F7A42F /* OnelinerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnelinerView.swift; sourceTree = "<group>"; };
+		07A1016B1FE6818600F7A42F /* UserDefaults+LastLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+LastLine.swift"; sourceTree = "<group>"; };
+		07A1016D1FE681A000F7A42F /* String+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Constants.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,8 @@
 		07A101491FE67FAC00F7A42F /* OnelinerKit */ = {
 			isa = PBXGroup;
 			children = (
+				07A101681FE680E600F7A42F /* View */,
+				07A101611FE6800C00F7A42F /* Extension */,
 				07A1014A1FE67FAC00F7A42F /* OnelinerKit.h */,
 				07A1014B1FE67FAC00F7A42F /* Info.plist */,
 			);
@@ -84,6 +98,26 @@
 				07A101571FE67FAC00F7A42F /* Info.plist */,
 			);
 			path = OnelinerKitTests;
+			sourceTree = "<group>";
+		};
+		07A101611FE6800C00F7A42F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				07A101621FE6802100F7A42F /* NSTextField+Label.swift */,
+				07A101641FE6808C00F7A42F /* Date+FetchInterval.swift */,
+				07A101661FE680A600F7A42F /* TimeInterval+FetchInterval.swift */,
+				07A1016B1FE6818600F7A42F /* UserDefaults+LastLine.swift */,
+				07A1016D1FE681A000F7A42F /* String+Constants.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		07A101681FE680E600F7A42F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				07A101691FE680F400F7A42F /* OnelinerView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +182,7 @@
 				TargetAttributes = {
 					07A101461FE67FAC00F7A42F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					07A1014F1FE67FAC00F7A42F = {
@@ -196,6 +231,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A1016A1FE680F400F7A42F /* OnelinerView.swift in Sources */,
+				07A101651FE6808C00F7A42F /* Date+FetchInterval.swift in Sources */,
+				07A1016E1FE681A000F7A42F /* String+Constants.swift in Sources */,
+				07A1016C1FE6818600F7A42F /* UserDefaults+LastLine.swift in Sources */,
+				07A101631FE6802100F7A42F /* NSTextField+Label.swift in Sources */,
+				07A101671FE680A600F7A42F /* TimeInterval+FetchInterval.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -321,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -333,6 +374,7 @@
 		07A1015C1FE67FAC00F7A42F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -348,6 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.kida.OnelinerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -355,6 +398,7 @@
 		07A1015D1FE67FAC00F7A42F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -377,6 +421,7 @@
 		07A1015F1FE67FAC00F7A42F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 857XYUU5FE;
@@ -391,6 +436,7 @@
 		07A101601FE67FAC00F7A42F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 857XYUU5FE;
