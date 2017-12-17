@@ -18,6 +18,8 @@ class DeveloperExcusesView: OnelinerView {
 
 The screensaver will display whatever is invoked as the `String` argument inside the `completion` closure. The `fetchOneline` method will fetched whenever the screensaver thinks it's necessary.
 
+If you're keen to see a reference implementation, just head over to [DeveloperExcuses](https://github.com/kimar/DeveloperExcuses).
+
 ## License
 
 MIT
