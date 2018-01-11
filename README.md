@@ -1,5 +1,9 @@
 # OnelinerKit
 
+[![Twitter: @Kidmar](https://img.shields.io/badge/contact-@Kidmar-blue.svg?style=flat)](https://twitter.com/Kidmar)
+[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/kimar/OnelinerKit/blob/master/LICENSE.md)
+[![TravisCI](https://api.travis-ci.org/kimar/OnelinerKit.svg?branch=master)](https://travis-ci.org/kimar/OnelinerKit)
+
 ## Create text based screensavers for macOS.
 
 ![Banner](banner.png)
