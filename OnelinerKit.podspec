@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "OnelinerKit"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "A macOS framework to create text based screen savers."
   s.swift_version = "4.1"
 
