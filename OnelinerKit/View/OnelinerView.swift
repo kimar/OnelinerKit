@@ -54,7 +54,7 @@ open class OnelinerView: ScreenSaverView {
         rect.fill()
     }
     
-    open func fetchOneline(_ completion: (String) -> Void) {
+    open func fetchOneline(_ completion: @escaping (String) -> Void) {
         preconditionFailure("`fetchOneline` must be overridden")
     }
     
